@@ -23,11 +23,7 @@ body {
 .header {
   height: 10vh;
   background-color: #fff;
-}
-
-.nav {
   padding: 0 5vw;
-  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +59,9 @@ body {
   position: relative;
   background-color: #fff;
   border-bottom-left-radius: 7rem;
+  width: 100%;
+  background-image: url(./images/header-shapes\ mobile@2x.svg);
+
 }
 
 .heading-primary {
@@ -98,74 +97,4 @@ body {
 .section-hero__social-media > * {
   margin-right: 1.5rem;
   cursor: pointer;
-}
-
-.inlogo {
-  display: inline;
-}
-
-.full-circle {
-  position: absolute;
-  bottom: 2rem;
-  right: 50vw;
-}
-
-.stick {
-  position: absolute;
-  bottom: 2.5rem;
-  right: 42vw;
-}
-
-.bottom-half-ring {
-  position: absolute;
-  right: 4rem;
-  bottom: 26vh;
-}
-
-.bottom-half-circle {
-  position: absolute;
-  right: 4rem;
-  bottom: 31vh;
-}
-
-.bottom-ring {
-  position: absolute;
-  left: 4rem;
-  bottom: 12vh;
-}
-
-.top-full-circle {
-  position: absolute;
-  top: 5rem;
-  left: 50vw;
-}
-
-.top-stick {
-  position: absolute;
-  top: 5.5rem;
-  left: 42vw;
-}
-
-.top-half-circle {
-  position: absolute;
-  top: 4rem;
-  left: -4px;
-}
-
-.top-left-stick {
-  position: absolute;
-  top: 0;
-  left: -6rem;
-}
-
-.big-stick-right {
-  position: absolute;
-  right: 0;
-  top: 3rem;
-}
-
-.big-ring-right {
-  position: absolute;
-  top: 6rem;
-  right: 0;
 }
