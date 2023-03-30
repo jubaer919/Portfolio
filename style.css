@@ -97,3 +97,156 @@ body {
   margin-right: 1.5rem;
   cursor: pointer;
 }
+
+.section-card {
+  padding: 11rem 0;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 8.8rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  grid-column: 1/-1;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 44px;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  color: #7a869a;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-description > *:not(:last-child) {
+  margin-right: 1.2rem;
+}
+
+.card-description__stack {
+  color: #344563;
+}
+
+.card__gray-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c1c7d0;
+  display: inline-block;
+}
+
+.card-paragraph {
+  color: #344563;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-language {
+  display: flex;
+}
+
+.card-language > *:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.btn-small {
+  font-size: 1.2rem;
+  color: #6070ff;
+  display: inline-block;
+  padding: 0.4rem 1.2rem;
+  background-color: #ebebff;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.card-cta {
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  color: #396df2;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 2px solid #396df2;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  transition: all ease-in 0.3s;
+}
+
+.card-cta:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+.card-cta:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.section-about-me {
+  background-color: #fff;
+  border-top-right-radius: 7rem;
+  padding: 11rem 0;
+}
+
+.about-me-tech {
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.arrow-logo {
+  width: 1.8rem;
+  margin-right: 2rem;
+}
+
+.language-des {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+  color: black;
+  font-size: 2rem;
+}
+
+.language__details {
+  display: flex;
+  flex-direction: column;
+}
+
+.language__details > *:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+
+.language__details-container {
+  display: flex;
+  align-items: center;
+  color: #253858;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: #f7f7f9;
+  padding: 1rem;
+}
+
+.language__details-container > *:not(:last-child) {
+  margin-right: 2rem;
+}
