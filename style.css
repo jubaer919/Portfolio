@@ -61,6 +61,7 @@ body {
   border-bottom-left-radius: 7rem;
   width: 100%;
   background-image: url(./images/header-shapes\ mobile@2x.svg);
+  background-repeat: no-repeat;
 }
 
 .heading-primary {
@@ -91,6 +92,7 @@ body {
 
 .section-hero__social-media {
   margin-top: 1.2rem;
+  display: flex;
 }
 
 .section-hero__social-media > * {
