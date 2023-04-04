@@ -170,22 +170,19 @@
         </section>
         <section class="section-contuct-me">
             <div class="container">
-                <h2 class="contuct-me__heading">Contact me</h2>
-                <p class="contuct-me__paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
-                <input type="text" class="contuct-me__name-input" placeholder="Enter Your Name">
-                <input type="email" class="contuct-me__email-input" placeholder="Enter Your Email">
-                <textarea name="Enter Your massages Here" id="" cols="30" rows="10" class="contuct-me__textarea" placeholder="Enter your massages here"></textarea>
-                <a href="#" class="contuct-me__btn">Get in touch</a>
+                <div class="contuct-me-box">
+                    <h2 class="contuct-me__heading">Contact me</h2>
+                    <p class="contuct-me__paragraph">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it!</p>
+                    
+                    <form action="#" method="post">
+                        <input type="text" class="contuct-me__name-input" placeholder="Enter Your Name" maxlength="30" required>
+                        <input type="email" class="contuct-me__email-input" placeholder="Enter Your Email" required>
+                        <textarea name="Enter Your massages Here" id="" cols="30" rows="10" class="contuct-me__textarea" maxlength="500" placeholder="Enter your massages here" required></textarea>
+                        <input type="submit" class="contuct-me__btn" value="Get in touch">
+                    </form>
+                </div>
             </div>
         </section>
-
-        <!-- <section class="section-footer">
-            <nav>
-                <ul>
-                    <li><a href="#">home</a></li>
-                </ul>
-            </nav>
-        </section> -->
     </main>
 </body>
 </html>
