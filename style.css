@@ -255,15 +255,14 @@ body {
 }
 
 .section-contuct-me {
-  background-color: #6070FF;
+  background-color: #6070ff;
   background-image: url(images/contuct-form-bg.svg);
   background-repeat: no-repeat;
   background-position: right;
-  color: #FFFFFF;
+  color: #fff;
   border-top-left-radius: 7rem;
   padding-top: 10rem;
   margin-top: -7rem;
-  
 }
 
 .contuct-me-box {
@@ -309,7 +308,7 @@ body {
 .contuct-me__btn {
   border: none;
   outline: none;
-  color: #6070FF;
+  color: #6070ff;
   background-color: #fff;
   font-size: 1.8rem;
   font-family: inherit;
