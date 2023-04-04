@@ -29,6 +29,10 @@ body {
   align-items: center;
 }
 
+.nav-list {
+  display: none;
+}
+
 .logo {
   color: #6070ff;
   font-size: 1.8rem;
@@ -40,6 +44,8 @@ body {
   height: 3px;
   background-color: #6070ff;
 }
+
+/* add some comment */
 
 .span-burger:hover {
   background-color: #9099ff;
@@ -317,4 +323,33 @@ body {
   display: inline-block;
   margin-bottom: 4rem;
   cursor: pointer;
+}
+
+@media (min-width: 1435px) {
+  body {
+    scroll-behavior: smooth;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+  }
+
+  .nav-link {
+    color: #344563;
+    font-family: inherit;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .section-hero {
+    background-image: url(./images/desktop-images/Header-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
