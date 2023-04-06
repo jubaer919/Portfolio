@@ -497,4 +497,25 @@ body {
     max-width: 90%;
     margin: 0 auto;
   }
+
+  .language-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .contuct-me__name-input,
+  .contuct-me__email-input,
+  .contuct-me__textarea {
+    border-radius: 0;
+  }
+
+  .contuct-me__btn {
+    transition: all 0.2s;
+  }
+
+  .contuct-me__btn:hover {
+    color: #fff;
+    background-color: #2230d2;
+  }
 }
