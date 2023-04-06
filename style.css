@@ -560,7 +560,7 @@ body {
     }
   } 
 
-  /* @keyframes moveToLeft {
+  @keyframes moveToLeft {
     0% {
       opacity: 0;
       transform: translateX(100px);
@@ -572,5 +572,5 @@ body {
       opacity: 1;
       transform: translateX(0);
     }
-  } */
+  }
 }
