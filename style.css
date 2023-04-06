@@ -327,9 +327,18 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 1435px) {
-  body {
+@media (min-width: 768px) {
+  html {
     scroll-behavior: smooth;
+  }
+
+  .header {
+    padding: 0 10vw;
+  }
+
+  .container {
+    max-width: 80vw;
+    margin: 0 auto;
   }
 
   .nav-list {
@@ -343,6 +352,7 @@ body {
     font-family: inherit;
     font-size: 1.7rem;
     font-weight: 500;
+    cursor: pointer;
   }
 
   .hamburger {
@@ -350,8 +360,162 @@ body {
   }
 
   .section-hero {
+    padding: 25rem 0;
     background-image: url(./images/desktop-images/Header-bg.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    border-bottom-left-radius: 15rem;
+  }
+
+  .section-hero-wraper {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .heading-primary {
+    font-size: 4.8rem;
+    line-height: 6rem;
+    letter-spacing: 0.37px;
+  }
+
+  .section-hero__paragraph {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.3s;
+    border-radius: 2.6rem;
+  }
+
+  .card:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+    outline: 1px solid #2230d2;
+    transform: translateY(-2px);
+  }
+
+  .card:hover .card-cta {
+    background-color: #396df2;
+    color: #fff;
+  }
+
+  .card__picture {
+    width: 50%;
+  }
+
+  .card-img {
+    margin-bottom: 0;
+  }
+
+  .card__content {
+    width: 50%;
+    padding: 2rem 4rem;
+  }
+
+  .card__content > *:not(:last-child) {
+    margin-bottom: 2.2rem;
+  }
+
+  .card-title {
+    font-size: 4rem;
+  }
+
+  .card-paragraph {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .card-style-2 {
+    flex-direction: row-reverse;
+  }
+
+  .section-about-me {
+    border-top-right-radius: 15rem;
+    padding-top: 15rem;
+    padding-bottom: 30rem;
+  }
+
+  .about-me-wraper {
+    display: flex;
+  }
+
+  .about-me-des {
+    width: 50%;
+    padding-right: 4rem;
+  }
+
+  .about-me-tech {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .language-des:first-child {
+    margin: 0 0 3rem 0;
+  }
+
+  .language__details {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .language__details > *:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 1.2rem;
+  }
+
+  .language__details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .language__details-container > *:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+
+  .section-contuct-me {
+    background-image: url(images/desktop-images/contuct-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 15rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    margin-top: -15rem;
+  }
+
+  .contuct-me-box {
+    max-width: 30vw;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  .contuct-form {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .language-title {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #344563;
+  }
+
+  .contuct-me__name-input,
+  .contuct-me__email-input,
+  .contuct-me__textarea {
+    border-radius: 0;
+  }
+
+  .contuct-me__btn {
+    transition: all 0.2s;
+  }
+
+  .contuct-me__btn:hover {
+    color: #fff;
+    background-color: #2230d2;
   }
 }
