@@ -376,6 +376,19 @@ body {
     font-size: 4.8rem;
     line-height: 6rem;
     letter-spacing: 0.37px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .heading-primary__span-left {
+    display: block;
+    -webkit-animation: movetoright 1s ease-out;
+    animation: movetoRight 1s ease-out;
+  }
+
+  .heading-primary__sapan {
+    -webkit-animation: movetoleft 1s ease-out;
+    animation: moveToLeft 1s ease-out;
   }
 
   .section-hero__paragraph {
@@ -517,5 +530,53 @@ body {
   .contuct-me__btn:hover {
     color: #fff;
     background-color: #2230d2;
+  }
+
+  @-webkit-keyframes movetoRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    80% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes movetoRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+
+    80% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes moveToLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+
+    80% {
+      transform: translateX(-20px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }
