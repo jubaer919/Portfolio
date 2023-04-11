@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Jubaer Maruf</title>
+    <title>Jubaer Maruf Portfolio</title>
 </head>
 
 <body>
     <header class="header">
-        <a href="#" class="logo">My Logo</a>
+        <a href="#" class="logo">JM</a>
         <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
@@ -187,19 +187,19 @@
                             <li>
                                 <div class="language-des">
                                     <h3 class="language-title">Languages</h3>
-                                    <img src="./images/arrow-down-svgrepo-com.svg" alt="logo" class="arrow-logo">
+                                    <img src="./images/arrow-down-svgrepo-com.svg" alt="down arrow logo" class="arrow-logo">
                                 </div>
                                 <ul class="language__details">
                                     <li class="language__details-container">
-                                        <img src="images/javascript-logo.png" alt="logo" class="language__logo">
+                                        <img src="images/javascript-logo.png" alt="javascript logo" class="language__logo">
                                         <h4 class="language__title">JavaScript</h4>
                                     </li>
                                     <li class="language__details-container">
-                                        <img src="./images/html-logo.png" alt="logo" class="language__logo">
+                                        <img src="./images/html-logo.png" alt="html logo" class="language__logo">
                                         <h4 class="language__title">HTML</h4>
                                     </li>
                                     <li class="language__details-container">
-                                        <img src="./images/css-logo.png" alt="logo" class="language__logo">
+                                        <img src="./images/css-logo.png" alt="css logo" class="language__logo">
                                         <h4 class="language__title">CSS</h4>
                                     </li>
                                 </ul>
@@ -207,12 +207,12 @@
 
                             <li class="language-des">
                                 <h3 class="language-title">Frameworks</h3>
-                                <img src="./images/arrow-right-svgrepo-com.svg" alt="logo" class="arrow-logo">
+                                <img src="./images/arrow-right-svgrepo-com.svg" alt="right arrow logo" class="arrow-logo">
                             </li>
                             <hr>
                             <li class="language-des">
                                 <h3 class="language-title">Skills</h3>
-                                <img src="./images/arrow-right-svgrepo-com.svg" alt="logo" class="arrow-logo">
+                                <img src="./images/arrow-right-svgrepo-com.svg" alt="right arrow logo logo" class="arrow-logo">
                             </li>
                             <hr>
                         </ul>
@@ -228,10 +228,13 @@
                         feature that you need built or a project that needs coding. I’d love to help with it!</p>
 
                     <form action="https://formspree.io/f/mqkoyjpz" method="post" class="contuct-form">
-                        <input type="text" class="contuct-me__name-input" placeholder="Enter Your Name" maxlength="30"
+                        <label for="name-input" class="input-label">Name</label>
+                        <input type="text" id="name-input" class="contuct-me__name-input" placeholder="Enter Your Name" maxlength="30"
                             required>
-                        <input type="email" class="contuct-me__email-input" placeholder="Enter Your Email" required>
-                        <textarea name="Enter Your massages Here" id="" cols="30" rows="10" class="contuct-me__textarea"
+                        <label for="email-input" class="input-label">Email</label>
+                        <input type="email" class="contuct-me__email-input" id="email-input" placeholder="Enter Your Email" required>
+                        <label for="textarea-input" class="input-label">Textarea</label>
+                        <textarea name="Enter Your massages Here" id="textarea-input" cols="30" rows="10" class="contuct-me__textarea"
                             maxlength="500" placeholder="Enter your massages here" required></textarea>
                         <input type="submit" class="contuct-me__btn" value="Get in touch">
                     </form>
