@@ -527,11 +527,13 @@ body {
 
   .contuct-me__btn {
     transition: all 0.2s;
+    border: 2px solid transparent;
   }
 
   .contuct-me__btn:hover {
     color: #fff;
     background-color: #2230d2;
+    border: 2px solid #fff;
   }
 
   @-webkit-keyframes movetoRight {
