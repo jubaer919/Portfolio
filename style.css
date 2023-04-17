@@ -45,9 +45,11 @@ body {
   width: 100%;
   height: 0;
   /* background-color: rgba(0, 0, 0, 0.7); */
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)); */
+  background-color: #172b4d;
   opacity: 0;
   animation: overlay-animation 0.3s ease-in-out forwards;
+  color: #172b4d;
 }
 
 .header.active .overlay {
