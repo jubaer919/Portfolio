@@ -12,6 +12,7 @@ html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,16 +24,75 @@ body {
 }
 
 .header {
+  z-index: 3;
   height: 10vh;
   background-color: #fff;
   padding: 0 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay {
+  z-index: 1;
+  overflow-y: scroll;
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3));
+  opacity: 0;
+  animation: overlay-animation 0.3s ease-in-out forwards;
+}
+
+.header.active .overlay {
+  height: 100%;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-list {
-  display: none;
+  z-index: 40;
+  position: absolute;
+  top: 14vh;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #fff;
+  width: 90%;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+}
+
+.header.active .nav-list {
+  visibility: visible;
+  animation: showNavList 0.3s linear forwards;
+}
+
+@keyframes showNavList {
+  1% {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 2rem;
+  color: #253858;
 }
 
 .logo {
@@ -41,21 +101,33 @@ body {
   font-weight: 700;
 }
 
+.hamburger {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
 .span-burger {
   display: block;
   width: 2.5rem;
   height: 3px;
   background-color: #6070ff;
+  transition: all 0.3s ease-in-out;
 }
 
-/* add some comment */
+.active .burger-1 {
+  transform: rotate(45deg) translate(5px, 7px);
+}
 
-.span-burger:hover {
-  background-color: #9099ff;
+.active .burger-2 {
+  opacity: 0;
+}
+
+.active .burger-3 {
+  transform: rotate(-45deg) translate(4px, -6px);
 }
 
 .span-burger:not(:last-child) {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .container {
@@ -343,10 +415,25 @@ body {
     margin: 0 auto;
   }
 
+  .nav {
+    position: relative;
+    width: 20vw;
+  }
+
   .nav-list {
     display: flex;
     justify-content: space-between;
-    width: 20vw;
+    width: 100%;
+    position: static;
+    left: 0;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    padding: 0;
+  }
+
+  .overlay {
+    display: none;
   }
 
   .nav-link {
@@ -355,6 +442,7 @@ body {
     font-size: 1.7rem;
     font-weight: 500;
     cursor: pointer;
+    padding: 0;
   }
 
   .hamburger {
