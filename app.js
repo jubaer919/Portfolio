@@ -194,10 +194,10 @@ for (let i = 0; i < cards.length; i += 1) {
   cardContent.appendChild(cardCta);
 
   cardCta.addEventListener('click', () => {
-    const modal = document.createElement('div');
-    modal.classList.add('modal');
-    modal.style.display = 'block';
-    body.appendChild(modal);
+    // const modal = document.createElement('div');
+    // modal.classList.add('modal');
+    // modal.style.display = 'block';
+    // body.appendChild(modal);
 
     // creating modal-content element
     const modelContent = document.createElement('div');
@@ -249,9 +249,9 @@ for (let i = 0; i < cards.length; i += 1) {
     }
 
     // creating model-paragraph element
-    const modelParagraph = document.createElement('p');
-    modelParagraph.innerText = cards[i].paragraph;
-    modelInfo.appendChild(modelParagraph);
+    // const modelParagraph = document.createElement('p');
+    // modelParagraph.innerText = cards[i].paragraph;
+    // modelInfo.appendChild(modelParagraph);
 
     if (window.innerWidth > MOBILE_WIDTH) {
       modelParagraph.classList.add('model-paragraph');
@@ -277,3 +277,53 @@ for (let i = 0; i < cards.length; i += 1) {
 
   grid.appendChild(card);
 }
+
+// the form validation
+const form = document.querySelector('.contuct-form');
+const submitBtn = document.querySelector('input[type="submit"]');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const emailInput = document.querySelector('input[type="email"]');
+  const emailValue = emailInput.value;
+
+  if (emailValue === emailValue.toLowerCase()) {
+    form.submit();
+  } else {
+    // const errorMessage = document.createElement('p');
+    // errorMessage.textContent = 'Email must be in lower case.';
+    // errorMessage.style.color = '#ffffff';
+    // errorMessage.style.marginBottom = '1rem';
+    // submitBtn.insertAdjacentElement('beforebegin', errorMessage);
+  }
+});
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const form = document.querySelector('.contuct-form');
+//   const formInputs = form.querySelectorAll('input[type=text]');
+//   const savedData = JSON.parse(localStorage.getItem('formData'));
+
+//   // If there is saved data, pre-fill the input fields
+//   if (savedData) {
+//     for (let input of formInputs) {
+//       const inputName = input.getAttribute('name');
+//       if (inputName in savedData) {
+//         input.value = savedData[inputName];
+//       }
+//     }
+//   }
+
+//   // Add event listeners to all input fields
+//   for (let input of formInputs) {
+//     input.addEventListener('input', function() {
+//       const formData = {};
+//       for (let input of formInputs) {
+//         const inputName = input.getAttribute('name');
+//         formData[inputName] = input.value;
+//       }
+//       localStorage.setItem('formData', JSON.stringify(formData));
+//     });
+//   }
+// });
+
