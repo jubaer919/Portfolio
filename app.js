@@ -298,4 +298,3 @@ for (let i = 0; i < cards.length; i += 1) {
 //     // submitBtn.insertAdjacentElement('beforebegin', errorMessage);
 //   }
 // });
-
