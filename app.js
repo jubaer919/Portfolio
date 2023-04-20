@@ -249,9 +249,9 @@ for (let i = 0; i < cards.length; i += 1) {
     }
 
     // creating model-paragraph element
-    // const modelParagraph = document.createElement('p');
-    // modelParagraph.innerText = cards[i].paragraph;
-    // modelInfo.appendChild(modelParagraph);
+    const modelParagraph = document.createElement('p');
+    modelParagraph.innerText = cards[i].paragraph;
+    modelInfo.appendChild(modelParagraph);
 
     if (window.innerWidth > MOBILE_WIDTH) {
       modelParagraph.classList.add('model-paragraph');
