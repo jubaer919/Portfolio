@@ -282,7 +282,6 @@ for (let i = 0; i < cards.length; i += 1) {
 const form = document.querySelector('.contuct-form');
 const submitBtn = document.querySelector('input[type="submit"]');
 
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -292,11 +291,39 @@ form.addEventListener('submit', (event) => {
   if (emailValue === emailValue.toLowerCase()) {
     form.submit();
   } else {
-    const errorMessage = document.createElement('p');
-    errorMessage.textContent = 'Email must be in lower case.';
-    errorMessage.style.color = '#ffffff';
-    errorMessage.style.marginBottom = '1rem';
-    submitBtn.insertAdjacentElement('beforebegin', errorMessage);
+    // const errorMessage = document.createElement('p');
+    // errorMessage.textContent = 'Email must be in lower case.';
+    // errorMessage.style.color = '#ffffff';
+    // errorMessage.style.marginBottom = '1rem';
+    // submitBtn.insertAdjacentElement('beforebegin', errorMessage);
   }
 });
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const form = document.querySelector('.contuct-form');
+//   const formInputs = form.querySelectorAll('input[type=text]');
+//   const savedData = JSON.parse(localStorage.getItem('formData'));
+
+//   // If there is saved data, pre-fill the input fields
+//   if (savedData) {
+//     for (let input of formInputs) {
+//       const inputName = input.getAttribute('name');
+//       if (inputName in savedData) {
+//         input.value = savedData[inputName];
+//       }
+//     }
+//   }
+
+//   // Add event listeners to all input fields
+//   for (let input of formInputs) {
+//     input.addEventListener('input', function() {
+//       const formData = {};
+//       for (let input of formInputs) {
+//         const inputName = input.getAttribute('name');
+//         formData[inputName] = input.value;
+//       }
+//       localStorage.setItem('formData', JSON.stringify(formData));
+//     });
+//   }
+// });
 
