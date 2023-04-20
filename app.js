@@ -277,7 +277,7 @@ for (let i = 0; i < cards.length; i += 1) {
 
     // creating a logo for btn element
     const btnlogo = document.createElement('img');
-    btnlogo.src = './images/github.svg';
+    btnlogo.src = './images/github-b.svg';
     btnlogo.classList.add('btn-img');
     cardCta1.appendChild(btnlogo);
 
