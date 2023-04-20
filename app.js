@@ -262,39 +262,37 @@ for (let i = 0; i < cards.length; i += 1) {
     modelInfo.appendChild(modelinfoActive);
     modelinfoActive.appendChild(cardLanguage);
 
+    // cta container element
+    const ctaContainer = document.createElement('div');
+    ctaContainer.classList.add('button-container');
+    ctaContainer.style.marginTop = '1rem';
+    modelinfoActive.appendChild(ctaContainer);
+
     // model cta
     const cardCta1 = document.createElement('a');
-    cardCta1.classList.add('card-cta');
     cardCta1.classList.add('model-cta');
-    cardCta1.innerText = 'See live';
-    modelinfoActive.appendChild(cardCta1);
+    cardCta1.innerText = 'See Code';
+    cardCta1.style.marginRight = '1rem';
+    ctaContainer.appendChild(cardCta1);
 
+    // creating a logo for btn element
+    const btnlogo = document.createElement('img');
+    btnlogo.src = './images/github.svg';
+    btnlogo.classList.add('btn-img');
+    cardCta1.appendChild(btnlogo);
+
+    // model cta
     const cardCta2 = document.createElement('a');
-    cardCta2.classList.add('card-cta');
-    cardCta2.innerText = 'See source';
-    modelinfoActive.appendChild(cardCta2);
+    cardCta2.classList.add('model-cta');
+    cardCta2.innerText = 'See live';
+    ctaContainer.appendChild(cardCta2);
+
+    // creating a logo for btn element
+    const btnIcon = document.createElement('img');
+    btnIcon.classList.add('btn-img');
+    btnIcon.src = './images/Icon.svg';
+    cardCta2.appendChild(btnIcon);
   });
 
   grid.appendChild(card);
 }
-
-// // the form validation
-// const form = document.querySelector('.contuct-form');
-// const submitBtn = document.querySelector('input[type="submit"]');
-
-// form.addEventListener('submit', (event) => {
-//   event.preventDefault();
-
-//   const emailInput = document.querySelector('input[type="email"]');
-//   const emailValue = emailInput.value;
-
-//   if (emailValue === emailValue.toLowerCase()) {
-//     form.submit();
-//   } else {
-//     // const errorMessage = document.createElement('p');
-//     // errorMessage.textContent = 'Email must be in lower case.';
-//     // errorMessage.style.color = '#ffffff';
-//     // errorMessage.style.marginBottom = '1rem';
-//     // submitBtn.insertAdjacentElement('beforebegin', errorMessage);
-//   }
-// });
