@@ -299,31 +299,3 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const form = document.querySelector('.contuct-form');
-//   const formInputs = form.querySelectorAll('input[type=text]');
-//   const savedData = JSON.parse(localStorage.getItem('formData'));
-
-//   // If there is saved data, pre-fill the input fields
-//   if (savedData) {
-//     for (let input of formInputs) {
-//       const inputName = input.getAttribute('name');
-//       if (inputName in savedData) {
-//         input.value = savedData[inputName];
-//       }
-//     }
-//   }
-
-//   // Add event listeners to all input fields
-//   for (let input of formInputs) {
-//     input.addEventListener('input', function() {
-//       const formData = {};
-//       for (let input of formInputs) {
-//         const inputName = input.getAttribute('name');
-//         formData[inputName] = input.value;
-//       }
-//       localStorage.setItem('formData', JSON.stringify(formData));
-//     });
-//   }
-// });
-
