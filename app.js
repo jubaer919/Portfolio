@@ -291,11 +291,11 @@ form.addEventListener('submit', (event) => {
   if (emailValue === emailValue.toLowerCase()) {
     form.submit();
   } else {
-    // const errorMessage = document.createElement('p');
-    // errorMessage.textContent = 'Email must be in lower case.';
-    // errorMessage.style.color = '#ffffff';
-    // errorMessage.style.marginBottom = '1rem';
-    // submitBtn.insertAdjacentElement('beforebegin', errorMessage);
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = 'Email must be in lower case.';
+    errorMessage.style.color = '#ffffff';
+    errorMessage.style.marginBottom = '1rem';
+    submitBtn.insertAdjacentElement('beforebegin', errorMessage);
   }
 });
 
