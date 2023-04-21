@@ -298,4 +298,3 @@ form.addEventListener('submit', (event) => {
     submitBtn.insertAdjacentElement('beforebegin', errorMessage);
   }
 });
-
