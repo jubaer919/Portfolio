@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   }
-  //fixing the issues
+  
   // Add event listeners to all input fields
   for (let input of formInputs) {
     input.addEventListener('input', function() {
@@ -327,4 +327,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
 
