@@ -296,3 +296,24 @@ for (let i = 0; i < cards.length; i += 1) {
 
   grid.appendChild(card);
 }
+
+// the form validation
+const form = document.querySelector('.contuct-form');
+const submitBtn = document.querySelector('input[type="submit"]');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const emailInput = document.querySelector('input[type="email"]');
+  const emailValue = emailInput.value;
+
+  if (emailValue === emailValue.toLowerCase()) {
+    form.submit();
+  } else {
+    const errorMessage = document.createElement('p');
+    errorMessage.textContent = 'Email must be in lower case.';
+    errorMessage.style.color = '#ffffff';
+    errorMessage.style.marginBottom = '1rem';
+    submitBtn.insertAdjacentElement('beforebegin', errorMessage);
+  }
+});
