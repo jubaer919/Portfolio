@@ -320,8 +320,8 @@ document.addEventListener('DOMContentLoaded', () => {
     input.addEventListener('input', function() {
       const formData = {};
       for (let input of formInputs) {
-        // const inputName = input.getAttribute('name');
-        // formData[inputName] = input.value;
+        const inputName = input.getAttribute('name');
+        formData[inputName] = input.value;
       }
       localStorage.setItem('formData', JSON.stringify(formData));
     });
